@@ -61,6 +61,9 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+A closure is when a function refers to something from its surrounding (the outside) scope. An example would be when returning a function from inside of another function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +85,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The closure is on line 74 because the variable 'name' being referenced in the inside function() function is a parameter from the outside personalDice() function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name 'Dan" will always be the same, but the newRoll variable could change due to it being a randomized whole number.
+
 c. What is the lexical scope of `newRoll`? 
 
+The function() function on line 71 is the lexical scope of 'newRoll'.
 
 ### Task 3 - Stretch Goals
 
